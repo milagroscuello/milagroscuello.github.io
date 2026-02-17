@@ -71,7 +71,7 @@ function renderProjects(list) {
             ${techHtml} 
           </div>
           <div class="project-actions">
-            <a href="${project.code}" target="_blank">Code</a>
+            <a href="${project.code}" target="_blank"><i class="fab fa-github"></i> Code</a>
             ${project.demo !== "#" ? `<a href="${project.demo}" target="_blank">Demo</a>` : ""}
           </div>
         </div>
