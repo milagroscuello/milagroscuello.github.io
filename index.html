@@ -13,18 +13,33 @@
 
 <body>
 
+  <div class="language-switch">
+    <button data-lang="es">ES</button>
+    <button data-lang="en">EN</button>
+  </div>
+
   <section> 
     <div>
       <div>
-        <h1>Hi, I'm María Milagros Cuello</h1>
+        <h1   
+          data-es="Hola, soy María Milagros Cuello"
+          data-en="Hi, I'm María Milagros Cuello">
+          Hi, I'm María Milagros Cuello
+        </h1>
 
-        <p>Passionate about building innovative solutions through software and hardware integration. 
-          Experienced in full-stack development, embedded systems, and machine learning.</p>
+        <p
+          data-es="Apasionada por crear soluciones innovadoras mediante la integración de software y hardware. 
+            Con experiencia en desarrollo full-stack, sistemas integrados y aprendizaje automático."
+          data-en=" Passionate about building innovative solutions through software and hardware integration. 
+            Experienced in full-stack development, embedded systems, and machine learning.">
+          Passionate about building innovative solutions through software and hardware integration. 
+          Experienced in full-stack development, embedded systems, and machine learning.
+        </p>
 
         <div class="socials">
           <a href="mailto:milicuello812@gmail.com">
             <i class="fas fa-envelope"></i>
-            Contact Me
+            <span data-es="Contactarme" data-en="Contact Me">Contact me</span>
           </a>   
           <a href="https://github.com/milagroscuello" target="_blank">
             <i class="fab fa-github"></i>
@@ -41,38 +56,60 @@
 
   <section>
     <div>
-      <h2>Technical Skills</h2>
+      <h2 data-es="Habilidades Técnicas" data-en="Technical Skills">
+        Technical Skills
+      </h2>
 
       <div class="skill-card">
         <div class="skill-header">
           <i class="fas fa-code"></i>
-          <h3>Programming Languages</h3>
+          <h3 data-es="Lenguajes de Programación" data-en="Programming Languages">
+            Programming Languages
+          </h3>
         </div>
 
         <div class="skill-badges">
-          <badge>Python</badge>
-          <badge>Java</badge>
-          <badge>C</badge>
-          <badge>Rust</badge>
+          <span class="badge">Python</span>
+          <span class="badge">Java</span>
+          <span class="badge">C</span>
+          <span class="badge">Rust</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">TypeScript</span>
+          <span class="badge">SQL</span>
+          <span class="badge">Bash</span>
         </div>
       </div>
-
 
       <div class="skill-card">
         <div class="skill-header">
           <i class="fas fa-code"></i>
-          <h3>Data & Machine Learning</h3>
+          <h3 data-es="Datos y aprendizaje automático" data-en="Data & Machine Learning">
+            Data & Machine Learning
+          </h3>
+        </div>
 
-        </div>
           <div class="skill-badges">
-            <badge>Pandas</badge>
-            <badge>Data Analysis</badge>
-            <badge>Data Visualization</badge>
-            <badge>scikit-learn</badge>
-            <badge>TensorFlow</badge>
-            <badge>Jupyter Notebook</badge>
+            <span class="badge">Pandas</span>
+            <span class="badge">scikit-learn</span>
+            <span class="badge">TensorFlow</span>
+            <span class="badge"
+                  data-es="Análisis de Datos"
+                  data-en="Data Analysis">
+              Data Analysis
+            </span>
+            <span class="badge"
+                  data-es="Visualización de Datos"
+                  data-en="Data Visualization">
+              Data Visualization
+            </span>            
+            <span class="badge"
+                  data-es="Entrenamiento de Modelos"
+                  data-en="Model Training">
+              Model Training
+            </span>
+            <span class="badge">Jupyter Notebook</span>
           </div>
-        </div>
+      </div>
 
       <div class="skill-card">
         <div class="skill-header">
@@ -81,46 +118,65 @@
         </div>
 
         <div class="skill-badges">
-          <badge>HTML</badge>
-          <badge>CSS</badge>
-          <badge>Flask</badge>
-          <badge>REST API Integration</badge>
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">React</span>
+          <span class="badge">Node.js</span>
+          <span class="badge">Flask</span>
+          <span class="badge"
+                data-es="Diseño de APIs REST"
+                data-en="REST API Design">
+            REST API Design
+          </span>
+          <span class="badge">HTTP</span>
+          <span class="badge">PostgreSQL</span>
+          <span class="badge">MySQL</span>
+          <span class="badge">Postman</span>
         </div>
       </div>
 
       <div class="skill-card">
         <div class="skill-header">
           <i class="fas fa-database"></i>
-          <h3>Tools & Development</h3>
+          <h3 data-es="Herramientas y Tecnologías" data-en="Tools & Technologies">
+            Tools & Technologies
+          </h3>
         </div>
 
         <div class="skill-badges">
-          <badge>Git</badge>
-          <badge>Visual Studio Code</badge>
-          <badge>IntelliJ IDEA</badge>
-          <badge>Excel</badge>
-          <badge>Debugging</badge>
-          <badge>Code Optimization</badge>
-          <badge>Object-Oriented Programming</badge>
-          <badge>Data Structures</badge>
+          <span class="badge">Git</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Linux</span>
+          <span class="badge">Visual Studio Code</span>
+          <span class="badge">IntelliJ IDEA</span>
+          <span class="badge">Excel</span>
+          <span class="badge"
+                data-es="Depuración"
+                data-en="Debugging">
+            Debugging
+          </span>
         </div>
       </div>
-
     </div>
   </section>
 
   <section>
     <div>
       <div>
-        <h2>My Projects</h2>
+        <h2 data-es="Mis Proyectos" data-en="My Projects">
+          My Projects
+        </h2>
       </div>
       <div>
-        <input type="text" placeholder="Search projects by name, description or technologies...">
+        <input 
+          type="text" 
+          placeholder="Search projects by name, description or technologies..."
+          data-placeholder-es="Buscar proyectos por nombre, descripción o tecnología..."
+          data-placeholder-en="Search projects by name, description or technologies...">
         <tabs> 
-          <tab>All Projects</tab>
-          <tab>Web Development</tab>
-          <tab>IoT</tab>
-          <tab>Machine Learning</tab>
+          <tab data-es="Todos los proyectos" data-en="All Projects">All Projects</tab>
+          <tab data-es="Desarrollo Web" data-en="Web Development">Web Development</tab>
+          <tab data-es="Machine Learning" data-en="Machine Learning">Machine Learning</tab>
         </tabs>
       </div>
     </div>
@@ -128,13 +184,19 @@
 
   <section>
     <div>
-      <h2>Let's Connect</h2>
-      <p>I'm always interested in hearing about new opportunities, collaborations, or just chatting 
-        about technology. Feel free to reach out!</p>
+      <h2 data-es="Conectemos" data-en="Let's Connect">
+        Let's Connect
+      </h2>
+      <p
+       data-es="Siempre estoy interesada en nuevas oportunidades, colaboraciones o simplemente hablar de tecnología. ¡No dudes en contactarme!"
+       data-en="I'm always interested in hearing about new opportunities, collaborations, or just chatting about technology. Feel free to reach out!">
+        I'm always interested in hearing about new opportunities, collaborations, or just chatting 
+        about technology. Feel free to reach out!
+      </p>
       <div class="socials">
         <a href="mailto:milicuello812@gmail.com">
           <i class="fas fa-envelope"></i>
-          Contact Me
+          <span data-es="Contactarme" data-en="Contact Me">Contact me</span>
         </a>
         <a href="https://github.com/milagroscuello" target="_blank">
           <i class="fab fa-github"></i>
@@ -149,7 +211,12 @@
   </section>
 
   <footer>
-    <p>&copy; 2026 María Milagros Cuello. Built with HTML, CSS, and JavaScript.</p>
+    <p
+      data-es="© 2026 María Milagros Cuello. Hecho con HTML, CSS y JavaScript."
+      data-en="© 2026 María Milagros Cuello. Built with HTML, CSS and JavaScript.">
+      &copy; 2026 María Milagros Cuello. Built with HTML, CSS, and JavaScript.
+    </p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
