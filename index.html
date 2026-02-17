@@ -160,7 +160,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="projects">
     <div>
       <div>
         <h2 data-es="Mis Proyectos" data-en="My Projects">
@@ -173,12 +173,14 @@
           placeholder="Search projects by name, description or technologies..."
           data-placeholder-es="Buscar proyectos por nombre, descripción o tecnología..."
           data-placeholder-en="Search projects by name, description or technologies...">
-        <tabs> 
-          <tab data-es="Todos los proyectos" data-en="All Projects">All Projects</tab>
-          <tab data-es="Desarrollo Web" data-en="Web Development">Web Development</tab>
-          <tab data-es="Machine Learning" data-en="Machine Learning">Machine Learning</tab>
-        </tabs>
+          <tabs id="categoryTabs"> 
+            <tab data-filter="all" data-es="Todos los proyectos" data-en="All Projects">All Projects</tab>
+            <tab data-filter="c-programming" data-es="Programación en C" data-en="C Programming">C Programming</tab>
+            <tab data-filter="web-dev" data-es="Desarrollo Web" data-en="Web Development">Web Development</tab>
+            <tab data-filter="ml" data-es="Machine Learning" data-en="Machine Learning">Machine Learning</tab>
+          </tabs>
       </div>
+      <div id="projectsGrid" class="projects-grid"></div>
     </div>
   </section>
 
